@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Mooli&family=Pacifico&display=swap" rel="stylesheet">
 
+
   </head>
 
   <body>
@@ -22,7 +23,12 @@
     <%= render 'shared/nav' %>
 
     <div class = "container">
-      <%= yield %>
+    <div class = "row">
+      <div class = "col-xs-12 col-md-6 col-md-offset-3">
+        <%= render 'shared/flash_messages' %>
+        <%= yield %>
+      </div>
+    </div>
     </div>
 
   </div><!-- wrap -->
@@ -31,5 +37,6 @@
     
 
    <%= render 'shared/footer'  %> 
+
   </body>
 </html>

@@ -73,3 +73,7 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+gem 'simple_form', "~> 5.0",'>= 5.0.2'
+
+gem 'will_paginate', '~> 3.3'
